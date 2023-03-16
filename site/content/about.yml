@@ -1,0 +1,6 @@
+title: This is an about page.
+intro: Intro.
+team:
+  - name: Person 1
+    position: Position 1
+    photo: /img/about-logo-2x.png
