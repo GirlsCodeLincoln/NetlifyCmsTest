@@ -3,3 +3,6 @@ companies:
   - expirationdate: ""
     name: Hudl
     logo: /static/img/sponsors/hudl.png
+  - expirationdate: ""
+    logo: /static/img/sponsors/assurity.png
+    name: Assurity
