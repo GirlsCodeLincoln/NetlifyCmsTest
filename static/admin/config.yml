@@ -31,6 +31,18 @@ collections:
             fields:
               - {label: Title, name: title, widget: string}
               - {label: "Background Image", name: image, widget: image, optional: true}
+      - label: "Sponsors"
+        name: "sponsors"
+        file: "data/sponsors.yml"
+        fields:
+          - {label: Title, name: title, widget: string}
+          - label: "Companies"
+            name: "companies"
+            widget: list
+            fields:
+              - {label: "Name", name: "name", widget: string}
+              - {label: "Logo", name: "logo", widget: image}
+              - {label: "Expiration Date", name: "expirationdate", widget: date, optional: true}
   - name: 'blog'
     label: 'Blog'
     folder: 'content/blog'
