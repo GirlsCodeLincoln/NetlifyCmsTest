@@ -7,18 +7,18 @@ collections:
   - label: "Pages"
     name: "pages"
     files:
-      - label: "Board"
-        name: "board"
-        file: "data/board.yml"
+      - label: "About Page"
+        name: "about"
+        file: "src/content/about.yml"
         fields:
           - {label: Title, name: title, widget: string}
           - {label: Intro, name: intro, widget: markdown}
-          - label: Board
-            name: board
+          - label: Team
+            name: team
             widget: list
             fields:
               - {label: Name, name: name, widget: string}
-              - {label: Title, name: title, widget: string}
+              - {label: Position, name: position, widget: string}
               - {label: Photo, name: photo, widget: image}
   - name: 'blog'
     label: 'Blog'

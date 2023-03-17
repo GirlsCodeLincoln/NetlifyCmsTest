@@ -1,0 +1,8 @@
+title: The Board!
+intro: These are our awesome board members.
+team:
+  - name: Person 1
+    title: Position 1
+    photo: /img/about-logo-2x.png
+  - name: Person 2
+    title: Position 2

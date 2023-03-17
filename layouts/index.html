@@ -1,3 +1,11 @@
 {{ define "content" }}
-  This is the index file.
+  <h2>{{ $.Site.Data.board.title }}</h2>
+
+  <p>{{ $.Site.Data.board.intro }}</p>
+  
+  <ul>
+    {{ range $.Site.Data.board.team }}
+      <li>{{ .name }} - {{ .title }}</li>
+    {{ end }}
+  </ul>
 {{ end }}
