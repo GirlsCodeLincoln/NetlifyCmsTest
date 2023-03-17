@@ -1,8 +1,27 @@
 title: The Board!
-intro: These are our awesome board members.
+intro: |-
+  These are our awesome board members. **Awesome**
+
+  We can write whatever here in this WYSIWYG editor.
+
+  > Here is a block quote.
+
+  Here is a numbered list:
+
+  1. One
+  2. Two
+  3. Three
+
+  Here is an image. Not sure if we can resize it in the editor...looks like not.
+
+  ![firefox](/img/about-logo-2x.png "Firefox")
 team:
   - name: Person 1
     title: Position 1
     photo: /img/about-logo-2x.png
   - name: Person 2
     title: Position 2
+board:
+  - name: Name 1
+    title: Title 1
+    photo: /img/about-logo-2x.png
