@@ -4,8 +4,8 @@ backend:
 media_folder: static/img
 public_folder: /img
 collections:
-  - label: "Pages"
-    name: "pages"
+  - label: "Sections"
+    name: "section"
     files:
       - label: "Board"
         name: "board"
@@ -13,13 +13,24 @@ collections:
         fields:
           - {label: Title, name: title, widget: string}
           - {label: Intro, name: intro, widget: markdown}
-          - label: Board
-            name: board
+          - label: "Members"
+            name: "members"
             widget: list
             fields:
               - {label: Name, name: name, widget: string}
               - {label: Title, name: title, widget: string}
-              - {label: Photo, name: photo, widget: image}
+              - {label: Photo, name: photo, widget: image, optional: true}
+      - label: "Get Involved"
+        name: "getinvolved"
+        file: "data/getinvolved.yml"
+        fields:
+          - {label: Title, name: title, widget: string}
+          - label: "Opportunities"
+            name: "opportunities"
+            widget: list
+            fields:
+              - {label: Title, name: title, widget: string}
+              - {label: "Background Image", name: image, widget: image, optional: true}
   - name: 'blog'
     label: 'Blog'
     folder: 'content/blog'

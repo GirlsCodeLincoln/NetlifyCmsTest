@@ -15,13 +15,9 @@ intro: |-
   Here is an image. Not sure if we can resize it in the editor...looks like not.
 
   ![firefox](/img/about-logo-2x.png "Firefox")
-team:
+members:
   - name: Person 1
     title: Position 1
     photo: /img/about-logo-2x.png
   - name: Person 2
     title: Position 2
-board:
-  - name: Name 1
-    title: Title 1
-    photo: /img/about-logo-2x.png
