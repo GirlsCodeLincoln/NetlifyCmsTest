@@ -7,7 +7,7 @@ html {
 }
 
 body {
-  font-family: 'Quicksand', sans-serif !important;
+  font-family: "Quicksand", sans-serif !important;
 }
 
 p {
@@ -15,7 +15,7 @@ p {
 }
 
 a {
-  color: #0A4BED;
+  color: #0a4bed;
 }
 
 button:disabled {
@@ -43,7 +43,7 @@ button:disabled {
 
 .navbar-dark .navbar-nav .nav-link:hover,
 .navbar-dark .navbar-nav .nav-link:focus {
-  color: #CCCCCC;
+  color: #cccccc;
 }
 
 .navbar-dark .navbar-toggler {
@@ -70,7 +70,6 @@ main section.girlscode img {
 }
 
 section {
-
 }
 
 #image-gallery,
@@ -94,7 +93,7 @@ hr.hr {
 }
 
 .bg-blue {
-  background-color: #0A4BED;
+  background-color: #0a4bed;
 }
 
 .bg-pink {
@@ -102,7 +101,7 @@ hr.hr {
 }
 
 .bg-grey {
-  background-color: #EEF1F6;
+  background-color: #eef1f6;
 }
 
 .bg-purple {
@@ -110,11 +109,11 @@ hr.hr {
 }
 
 .bg-indigo {
-  background-color: #2A29B4;
+  background-color: #2a29b4;
 }
 
 .icon-foreground {
-  color: #EEF1F6;
+  color: #eef1f6;
 }
 
 .icon-background {
@@ -136,15 +135,20 @@ hr.hr {
 
 #get-involved {
   background: linear-gradient(rgba(242, 175, 228, 0.7), rgba(10, 75, 237, 0.9)),
-  url("/img/involvement-background.jpg");
+    url("/img/involvement-background.jpg");
   background-position: center right;
   background-size: cover;
   background-repeat: no-repeat;
 }
 
 #our-clubs {
-  background: linear-gradient(180deg, rgba(242, 175, 228, 1), rgba(242, 175, 228, 0.9) 80%, rgba(242, 175, 228, 1)),
-  url("/img/clubs-background.jpg");
+  background: linear-gradient(
+      180deg,
+      rgba(242, 175, 228, 1),
+      rgba(242, 175, 228, 0.9) 80%,
+      rgba(242, 175, 228, 1)
+    ),
+    url("/img/clubs-background.jpg");
   background-position: center right;
   background-size: cover;
   background-repeat: no-repeat;
@@ -156,8 +160,8 @@ ul.timeline {
 }
 
 ul.timeline::before {
-  content: ' ';
-  background: #EEF1F6;
+  content: " ";
+  background: #eef1f6;
   display: inline-block;
   position: absolute;
   left: 29px;
@@ -172,12 +176,12 @@ ul.timeline > li {
 }
 
 ul.timeline > li::before {
-  content: ' ';
-  background: #EEF1F6;
+  content: " ";
+  background: #eef1f6;
   display: inline-block;
   position: absolute;
   border-radius: 50%;
-  border: 3px solid #0A4BED;
+  border: 3px solid #0a4bed;
   left: 20px;
   width: 20px;
   height: 20px;
@@ -190,18 +194,23 @@ ul.timeline > li.previous-club {
 
 .timeline-show-more {
   cursor: pointer;
-  color: #0A4BED;
+  color: #0a4bed;
 }
 
 .timeline-show-less {
   cursor: pointer;
   display: none;
-  color: #0A4BED;
+  color: #0a4bed;
 }
 
 #sponsors-partners {
-  background: linear-gradient(180deg, rgba(238, 241, 246, 1), rgba(238, 241, 246, 0.7) 80%, rgba(238, 241, 246, 1)),
-  url("/img/sponsor-background.jpg");
+  background: linear-gradient(
+      180deg,
+      rgba(238, 241, 246, 1),
+      rgba(238, 241, 246, 0.7) 80%,
+      rgba(238, 241, 246, 1)
+    ),
+    url("/img/sponsor-background.jpg");
   background-position: center bottom;
   background-size: cover;
   background-repeat: no-repeat;
@@ -222,7 +231,7 @@ ul.timeline > li.previous-club {
 }
 
 #contact {
-  background: linear-gradient(45deg, #7662AD 0%, #2A29B4 100%);
+  background: linear-gradient(45deg, #7662ad 0%, #2a29b4 100%);
 }
 
 .g-recaptcha {
@@ -236,7 +245,7 @@ ul.timeline > li.previous-club {
 .cta-btn,
   /* increase specificity so text is not white like other nav-items */
 .navbar .nav-item .cta-btn {
-  background-color: #D895CA;
+  background-color: #d895ca;
   color: black;
 
   /* GCL Pink, darkened 15% */
@@ -249,20 +258,20 @@ ul.timeline > li.previous-club {
 .navbar .nav-item .cta-btn:hover,
 .navbar .nav-item .cta-btn:focus {
   /* GCL Pink, darkened 5% */
-  background-color: #D182C1;
+  background-color: #d182c1;
   color: black;
 }
 
 .info-btn {
-  background-color: #0A4BED;
+  background-color: #0a4bed;
   /* GCL Blue, darkened 15% */
-  border: 1px solid #0734A4;
+  border: 1px solid #0734a4;
 }
 
 .info-btn:hover,
 .info-btn:focus {
   /* GCL Blue, darkened 5% */
-  background-color: #0943D5;
+  background-color: #0943d5;
 }
 
 footer {
@@ -280,7 +289,7 @@ footer {
 
 #social-links i:hover,
 #social-links i:focus {
-  color: #0A4BED;
+  color: #0a4bed;
   transform: scale(1.08);
 }
 
@@ -288,12 +297,12 @@ footer {
 
 @media (hover: none) {
   #sponsors-partners .logo:hover {
-      transform: none;
+    transform: none;
   }
 }
 
 @media screen and (max-width: 300px) {
   #sponsors-partners .logo {
-      max-width: 90vw;
+    max-width: 90vw;
   }
 }

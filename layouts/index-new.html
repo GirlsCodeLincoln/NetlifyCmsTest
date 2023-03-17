@@ -1,19 +1,19 @@
 {{ define "content" }}
-  <h2>{{ $.Site.Data.board.title }}</h2>
+<h2>{{ $.Site.Data.board.title }}</h2>
 
-  <p>{{ $.Site.Data.board.intro | markdownify }}</p>
-  
-  <ul>
-    {{ range $.Site.Data.board.members }}
-      <li>{{ .name }} - {{ .title }}</li>
-    {{ end }}
-  </ul>
+<p>{{ $.Site.Data.board.intro | markdownify }}</p>
 
-  <h2>{{ $.Site.Data.getinvolved.title }}</h2>
+<ul>
+  {{ range $.Site.Data.board.members }}
+  <li>{{ .name }} - {{ .title }}</li>
+  {{ end }}
+</ul>
 
-  <ul>
-    {{ range $.Site.Data.getinvolved.opportunities }}
-      <li>{{ .title }}</li>
-    {{ end }}
-  </ul>
+<h2>{{ $.Site.Data.getinvolved.title }}</h2>
+
+<ul>
+  {{ range $.Site.Data.getinvolved.opportunities }}
+  <li>{{ .title }}</li>
+  {{ end }}
+</ul>
 {{ end }}
