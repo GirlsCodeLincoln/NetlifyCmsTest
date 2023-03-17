@@ -19,7 +19,7 @@ collections:
             fields:
               - {label: Name, name: name, widget: string}
               - {label: Title, name: title, widget: string}
-              - {label: Photo, name: photo, widget: image, optional: true}
+              - {label: Photo, name: photo, widget: image, required: false}
       - label: "Get Involved"
         name: "getinvolved"
         file: "data/getinvolved.yml"
@@ -30,7 +30,7 @@ collections:
             widget: list
             fields:
               - {label: Title, name: title, widget: string}
-              - {label: "Background Image", name: image, widget: image, optional: true}
+              - {label: "Background Image", name: image, widget: image, required: false}
       - label: "Sponsors"
         name: "sponsors"
         file: "data/sponsors.yml"
@@ -42,7 +42,7 @@ collections:
             fields:
               - {label: "Name", name: "name", widget: string}
               - {label: "Logo", name: "logo", widget: image, media_folder: "/static/img/sponsors"}
-              - {label: "Expiration Date", name: "expirationdate", widget: date, default: '', optional: true}
+              - {label: "Expiration Date", name: "expirationdate", widget: date, default: '', required: false}
   - name: 'blog'
     label: 'Blog'
     folder: 'content/blog'
