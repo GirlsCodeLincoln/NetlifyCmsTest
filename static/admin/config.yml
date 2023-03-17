@@ -42,7 +42,7 @@ collections:
             fields:
               - {label: "Name", name: "name", widget: string}
               - {label: "Logo", name: "logo", widget: image, media_folder: "/static/img/sponsors"}
-              - {label: "Expiration Date", name: "expirationdate", widget: date, optional: true}
+              - {label: "Expiration Date", name: "expirationdate", widget: date, default: '', optional: true}
   - name: 'blog'
     label: 'Blog'
     folder: 'content/blog'
