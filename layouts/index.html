@@ -314,21 +314,23 @@
     <div
       class="col-10 d-flex flex-wrap justify-content-center mx-auto mb-5 align-items-center"
     >
-      {{ range $.Site.Data.sponsors.companies }}
-        {{ if ne .url nil }}
-          <a
-            href="{{ .url }}"
-            rel="noopener"
-            target="_blank"
-          >
-        {{ end }}
-          <img
-            alt="{{ .name }}"
-            class="px-3 logo"
-            src="{{ .logo }}"
-          />
-        {{ if ne .url nil }}
-          </a>
+      {{ range $.Site.Data.sponsors.companies  }}
+        {{ if or (eq .expirationdate "") ((time .expirationdate).Before now) }}
+          {{ if ne .url nil }}
+            <a
+              href="{{ .url }}"
+              rel="noopener"
+              target="_blank"
+            >
+          {{ end }}
+            <img
+              alt="{{ .name }}"
+              class="px-3 logo"
+              src="{{ .logo }}"
+            />
+          {{ if ne .url nil }}
+            </a>
+          {{ end }}
         {{ end }}
       {{ end }}
     </div>
@@ -336,7 +338,7 @@
     <div
       class="col-10 d-flex flex-wrap justify-content-center mx-auto align-items-center"
     >
-      {{ range $.Site.Data.partners.companies }}
+      {{ range where $.Site.Data.partners.companies "now" "lt" ".expirationdate" }}
         {{ if ne .url nil }}
           <a
             href="{{ .url }}"
