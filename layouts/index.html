@@ -314,6 +314,19 @@
     <div
       class="col-10 d-flex flex-wrap justify-content-center mx-auto mb-5 align-items-center"
     >
+      {{ range $.Site.Data.sponsors.companies }}
+        <a
+          href="{{ .url }}"
+          rel="noopener"
+          target="_blank"
+        >
+          <img
+            alt="{{ .name }}"
+            class="px-3 logo"
+            src="{{ .logo }}"
+          />
+        </a>
+      {{ end }}
       <a
         href="https://mentorsfound.com"
         id="mentorsfound"

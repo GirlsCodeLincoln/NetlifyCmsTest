@@ -41,7 +41,7 @@ collections:
             widget: list
             fields:
               - {label: "Name", name: "name", widget: string}
-              - {label: "Logo", name: "logo", widget: image, media_folder: "/static/img/sponsors"}
+              - {label: "Logo", name: "logo", widget: image, media_folder: "/static/img/sponsors", public_folder: "/img/sponsors"}
               - {label: "Expiration Date", name: "expirationdate", widget: date, default: '', required: false}
   - name: 'blog'
     label: 'Blog'

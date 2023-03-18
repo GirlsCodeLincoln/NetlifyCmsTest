@@ -4,22 +4,45 @@ backend:
 media_folder: static/img
 public_folder: /img
 collections:
-  - label: "Pages"
-    name: "pages"
+  - label: "Sections"
+    name: "section"
     files:
-      - label: "About Page"
-        name: "about"
-        file: "src/content/about.yml"
+      - label: "Board"
+        name: "board"
+        file: "data/board.yml"
         fields:
           - {label: Title, name: title, widget: string}
           - {label: Intro, name: intro, widget: markdown}
-          - label: Team
-            name: team
+          - label: "Members"
+            name: "members"
             widget: list
             fields:
               - {label: Name, name: name, widget: string}
-              - {label: Position, name: position, widget: string}
-              - {label: Photo, name: photo, widget: image}
+              - {label: Title, name: title, widget: string}
+              - {label: Photo, name: photo, widget: image, required: false}
+      - label: "Get Involved"
+        name: "getinvolved"
+        file: "data/getinvolved.yml"
+        fields:
+          - {label: Title, name: title, widget: string}
+          - label: "Opportunities"
+            name: "opportunities"
+            widget: list
+            fields:
+              - {label: Title, name: title, widget: string}
+              - {label: "Background Image", name: image, widget: image, required: false}
+      - label: "Sponsors"
+        name: "sponsors"
+        file: "data/sponsors.yml"
+        fields:
+          - {label: Title, name: title, widget: string}
+          - label: "Companies"
+            name: "companies"
+            widget: list
+            fields:
+              - {label: "Name", name: "name", widget: string}
+              - {label: "Logo", name: "logo", widget: image, media_folder: "/static/img/sponsors"}
+              - {label: "Expiration Date", name: "expirationdate", widget: date, default: '', required: false}
   - name: 'blog'
     label: 'Blog'
     folder: 'content/blog'
