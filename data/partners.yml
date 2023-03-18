@@ -3,4 +3,10 @@ companies:
   - expirationdate: ""
     name: Fuse Coworking
     logo: /img/partners/fuse.png
-    url: "https://www.fusecoworking.com"
+    url: https://www.fusecoworking.com
+  - expirationdate: ""
+    name: Letura Idigima
+    logo: /img/partners/letura.png
+  - expirationdate: ""
+    name: Carlos Velasco
+    logo: /img/partners/carlos.png
