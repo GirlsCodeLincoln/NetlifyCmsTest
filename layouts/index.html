@@ -314,8 +314,8 @@
     <div
       class="col-10 d-flex flex-wrap justify-content-center mx-auto mb-5 align-items-center"
     >
-      {{ range $.Site.Data.sponsors.companies  }}
-        {{ if or (eq .expirationdate "") ((time .expirationdate).After now) }}
+      {{ range $.Site.Data.sponsors.companies }}
+        {{ if or (not .expirationdate) ((time .expirationdate).After now) }}
           {{ if ne .url nil }}
             <a
               href="{{ .url }}"
@@ -338,8 +338,8 @@
     <div
       class="col-10 d-flex flex-wrap justify-content-center mx-auto align-items-center"
     >
-      {{ range where $.Site.Data.partners.companies "now" "lt" ".expirationdate" }}
-        {{ if or (eq .expirationdate "") ((time .expirationdate).After now) }}
+      {{ range $.Site.Data.partners.companies }}
+        {{ if or (not .expirationdate) ((time .expirationdate).After now) }}
           {{ if ne .url nil }}
             <a
               href="{{ .url }}"
