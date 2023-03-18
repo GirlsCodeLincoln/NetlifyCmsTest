@@ -327,109 +327,24 @@
           />
         </a>
       {{ end }}
-      <a
-        href="https://mentorsfound.com"
-        id="mentorsfound"
-        rel="noopener"
-        target="_blank"
-      >
-        <img
-          alt="Mentors Found"
-          class="px-3 logo"
-          src="img/sponsors/mentors.png"
-        />
-      </a>
-      <a href="https://www.hudl.com" id="hudl" rel="noopener" target="_blank">
-        <img alt="Hudl" class="px-3 logo" src="img/sponsors/hudl.png" />
-      </a>
-      <a
-        href="https://www.assurity.com/"
-        id="assurity"
-        rel="noopener"
-        target="_blank"
-      >
-        <img alt="Assurity" class="px-3 logo" src="img/sponsors/assurity.png" />
-      </a>
-      <a
-        href="https://www.ameritas.com/"
-        id="Ameritas"
-        rel="noopener"
-        target="_blank"
-      >
-        <img alt="Ameritas" class="px-3 logo" src="img/sponsors/ameritas.svg" />
-      </a>
-      <a
-        href="https://dontpaniclabs.com/"
-        id="DPL"
-        rel="noopener"
-        target="_blank"
-      >
-        <img
-          alt="Don't Panic Labs"
-          class="px-3 logo"
-          src="img/sponsors/dpl.png"
-        />
-      </a>
-      <a href="https://ngtc.unl.edu/" id="NGTC" rel="noopener" target="_blank">
-        <img
-          alt="Nebraska Governance and Technology Center"
-          class="px-3 logo"
-          src="img/sponsors/NGTC.png"
-        />
-      </a>
-      <a
-        href="https://www.yomuchacho.com"
-        id="muchachos"
-        rel="noopener"
-        target="_blank"
-      >
-        <img
-          alt="Muchachos"
-          class="px-3 logo"
-          src="img/partners/muchachos.webp"
-        />
-      </a>
     </div>
     <h3 class="text-center mb-4">Partners</h3>
     <div
       class="col-10 d-flex flex-wrap justify-content-center mx-auto align-items-center"
     >
-      <a
-        href="https://www.fusecoworking.com"
-        id="fusecoworking"
-        rel="noopener"
-        target="_blank"
-      >
-        <img
-          alt="FUSE Coworking"
-          class="px-3 logo"
-          src="img/partners/fuse.png"
-        />
-      </a>
-      <a
-        href="https://leturaidigima.com"
-        id="leturaidigima"
-        rel="noopener"
-        target="_blank"
-      >
-        <img
-          alt="Letura Idigima"
-          class="px-3 logo"
-          src="img/partners/letura.png"
-        />
-      </a>
-      <a
-        href="https://www.carlosvelascodesign.com"
-        id="carlosvelascodesign"
-        rel="noopener"
-        target="_blank"
-      >
-        <img
-          alt="Carlos Velasco Design"
-          class="px-3 logo"
-          src="img/partners/carlos.png"
-        />
-      </a>
+      {{ range $.Site.Data.partners.companies }}
+        <a
+          href="{{ .url }}"
+          rel="noopener"
+          target="_blank"
+        >
+          <img
+            alt="{{ .name }}"
+            class="px-3 logo"
+            src="{{ .logo }}"
+          />
+        </a>
+      {{ end }}
     </div>
     <div class="col-10 mx-auto">
       <hr class="hr" />
