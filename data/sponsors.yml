@@ -2,9 +2,9 @@ title: Thank you to our sponsors!
 companies:
   - expirationdate: ""
     name: Hudl
-    logo: /static/img/sponsors/hudl.png
-    url: "https://www.hudl.com"
+    logo: /img/sponsors/hudl.png
+    url: https://www.hudl.com
   - expirationdate: ""
     logo: /static/img/sponsors/assurity.png
     name: Assurity
-    url: "https://www.assurity.com"
+    url: https://www.assurity.com
