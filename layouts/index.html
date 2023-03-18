@@ -315,17 +315,21 @@
       class="col-10 d-flex flex-wrap justify-content-center mx-auto mb-5 align-items-center"
     >
       {{ range $.Site.Data.sponsors.companies }}
-        <a
-          href="{{ .url }}"
-          rel="noopener"
-          target="_blank"
-        >
+        {{ if ne .url nil }}
+          <a
+            href="{{ .url }}"
+            rel="noopener"
+            target="_blank"
+          >
+        {{ end }}
           <img
             alt="{{ .name }}"
             class="px-3 logo"
             src="{{ .logo }}"
           />
-        </a>
+        {{ if ne .url nil }}
+          </a>
+        {{ end }}
       {{ end }}
     </div>
     <h3 class="text-center mb-4">Partners</h3>
@@ -333,17 +337,21 @@
       class="col-10 d-flex flex-wrap justify-content-center mx-auto align-items-center"
     >
       {{ range $.Site.Data.partners.companies }}
-        <a
-          href="{{ .url }}"
-          rel="noopener"
-          target="_blank"
-        >
+        {{ if ne .url nil }}
+          <a
+            href="{{ .url }}"
+            rel="noopener"
+            target="_blank"
+          >
+        {{ end }}
           <img
             alt="{{ .name }}"
             class="px-3 logo"
             src="{{ .logo }}"
           />
-        </a>
+        {{ if ne .url nil }}
+          </a>
+        {{ end }}
       {{ end }}
     </div>
     <div class="col-10 mx-auto">

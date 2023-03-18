@@ -43,6 +43,7 @@ collections:
               - {label: "Name", name: "name", widget: string}
               - {label: "Logo", name: "logo", widget: image, media_folder: "/static/img/sponsors", public_folder: "/img/sponsors"}
               - {label: "Expiration Date", name: "expirationdate", widget: date, default: '', required: false}
+              - {label: "Notes (not shown)", name: "notes", widget: string, required: false}
       - label: "Partners"
         name: "Partners"
         file: "data/partners.yml"
@@ -55,6 +56,7 @@ collections:
               - {label: "Name", name: "name", widget: string}
               - {label: "Logo", name: "logo", widget: image, media_folder: "/static/img/partners", public_folder: "/img/partners"}
               - {label: "Expiration Date", name: "expirationdate", widget: date, default: '', required: false}
+              - {label: "Notes (not shown)", name: "notes", widget: string, required: false}
   - name: 'blog'
     label: 'Blog'
     folder: 'content/blog'
