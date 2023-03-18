@@ -1,6 +1,9 @@
 title: Thank you to our sponsors!
 companies:
   - expirationdate: ""
+    name: Mentors
+    logo: /img/sponsors/mentors.png
+  - expirationdate: ""
     name: Hudl
     logo: /img/sponsors/hudl.png
     url: https://www.hudl.com
@@ -8,3 +11,15 @@ companies:
     logo: /img/sponsors/assurity.png
     name: Assurity
     url: https://www.assurity.com
+  - expirationdate: ""
+    name: Ameritas
+    logo: /img/sponsors/ameritas.svg
+  - expirationdate: ""
+    name: Don't Panic Labs
+    logo: /img/sponsors/dpl.png
+  - expirationdate: ""
+    name: Nebraska Governance and Technology Center
+    logo: /img/sponsors/NGTC.png
+  - expirationdate: ""
+    name: Muchachos
+    logo: /img/sponsors/mentors.png
