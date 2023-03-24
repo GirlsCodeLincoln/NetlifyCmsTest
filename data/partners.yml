@@ -10,3 +10,7 @@ companies:
   - expirationdate: ""
     name: Carlos Velasco
     logo: /img/partners/carlos.png
+  - expirationdate: 2023-04-08T05:00:00.000Z
+    name: Test
+    logo: /img/partners/about-logo-2x.png
+    notes: This is a test
