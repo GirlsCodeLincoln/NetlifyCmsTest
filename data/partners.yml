@@ -14,3 +14,4 @@ companies:
     name: Test
     logo: /img/partners/about-logo-2x.png
     notes: This is a test
+    url: https://google.com
