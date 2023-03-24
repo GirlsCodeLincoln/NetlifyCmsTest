@@ -314,7 +314,7 @@
     <div
       class="col-10 d-flex flex-wrap justify-content-center mx-auto mb-5 align-items-center"
     >
-      {{ range $.Site.Data.sponsors.companies }}
+      {{ range $.Site.Data.sponsors.organizations }}
         {{ $showSponsor := true }}
         {{ if .expirationdate }}
           {{ if ((time .expirationdate).Before now) }}
@@ -340,7 +340,7 @@
             src="{{ $image.RelPermalink }}"
             width="250px"
           />
-          
+
           {{ if .url }}
             </a>
           {{ end }}
@@ -351,7 +351,7 @@
     <div
       class="col-10 d-flex flex-wrap justify-content-center mx-auto align-items-center"
     >
-      {{ range $.Site.Data.partners.companies }}
+      {{ range $.Site.Data.partners.organizations }}
         {{ $showPartner := true }}
         {{ if .expirationdate }}
           {{ if ((time .expirationdate).Before now) }}

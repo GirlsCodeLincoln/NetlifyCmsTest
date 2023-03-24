@@ -37,8 +37,8 @@ collections:
         file: "data/sponsors.yml"
         fields:
           - {label: Title, name: title, widget: string}
-          - label: "Companies"
-            name: "companies"
+          - label: "Organizations"
+            name: "organizations"
             widget: list
             fields:
               - {label: "Name", name: "name", widget: string}
@@ -51,8 +51,8 @@ collections:
         file: "data/partners.yml"
         fields:
           - {label: Title, name: title, widget: string}
-          - label: "Companies"
-            name: "companies"
+          - label: "Organizations"
+            name: "organizations"
             widget: list
             fields:
               - {label: "Name", name: "name", widget: string}
