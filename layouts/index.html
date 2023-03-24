@@ -329,11 +329,18 @@
               target="_blank"
             >
           {{ end }}
-            <img
-              alt="{{ .name }}"
-              class="px-3 logo"
-              src="{{ .logo }}"
-            />
+
+          {{ $image := resources.Get .logo }}
+          {{ if ne $image.MediaType.SubType "svg" }}
+            {{ $image = $image.Resize "250x" }}
+          {{ end }}
+          <img
+            alt="{{ .name }}"
+            class="px-3 logo"
+            src="{{ $image.RelPermalink }}"
+            width="250px"
+          />
+          
           {{ if .url }}
             </a>
           {{ end }}
@@ -359,11 +366,18 @@
               target="_blank"
             >
           {{ end }}
-            <img
-              alt="{{ .name }}"
-              class="px-3 logo"
-              src="{{ .logo }}"
-            />
+
+          {{ $image := resources.Get .logo }}
+          {{ if ne $image.MediaType.SubType "svg" }}
+            {{ $image = $image.Resize "250x" }}
+          {{ end }}
+          <img
+            alt="{{ .name }}"
+            class="px-3 logo"
+            src="{{ $image.RelPermalink }}"
+            width="250px"
+          />
+          
           {{ if .url }}
             </a>
           {{ end }}
