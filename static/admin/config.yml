@@ -42,6 +42,7 @@ collections:
             fields:
               - {label: "Name", name: "name", widget: string}
               - {label: "Logo", name: "logo", widget: image, media_folder: "/assets/img/sponsors", public_folder: "/img/sponsors"}
+              - {label: "Url", name: "url", widget: string, required: false}
               - {label: "Expiration Date", name: "expirationdate", widget: date, default: '', required: false}
               - {label: "Notes (not shown)", name: "notes", widget: string, required: false}
       - label: "Partners"
@@ -55,6 +56,7 @@ collections:
             fields:
               - {label: "Name", name: "name", widget: string}
               - {label: "Logo", name: "logo", widget: image, media_folder: "/assets/img/partners", public_folder: "/img/partners"}
+              - {label: "Url", name: "url", widget: string, required: false}
               - {label: "Expiration Date", name: "expirationdate", widget: date, default: '', required: false}
               - {label: "Notes (not shown)", name: "notes", widget: string, required: false}
   - name: 'blog'
