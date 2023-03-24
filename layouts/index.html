@@ -315,8 +315,14 @@
       class="col-10 d-flex flex-wrap justify-content-center mx-auto mb-5 align-items-center"
     >
       {{ range $.Site.Data.sponsors.companies }}
-        {{ if or (not .expirationdate) ((time .expirationdate).After now) }}
-          {{ if ne .url nil }}
+        {{ $showSponsor := true }}
+        {{ if .expirationdate }}
+          {{ if ((time .expirationdate).Before now) }}
+            {{ $showSponsor = false }}
+          {{ end }}
+        {{ end }}
+        {{ if $showSponsor }}
+          {{ if .url }}
             <a
               href="{{ .url }}"
               rel="noopener"
@@ -328,7 +334,7 @@
               class="px-3 logo"
               src="{{ .logo }}"
             />
-          {{ if ne .url nil }}
+          {{ if .url }}
             </a>
           {{ end }}
         {{ end }}
@@ -339,8 +345,14 @@
       class="col-10 d-flex flex-wrap justify-content-center mx-auto align-items-center"
     >
       {{ range $.Site.Data.partners.companies }}
-        {{ if or (not .expirationdate) ((time .expirationdate).After now) }}
-          {{ if ne .url nil }}
+        {{ $showPartner := true }}
+        {{ if .expirationdate }}
+          {{ if ((time .expirationdate).Before now) }}
+            {{ $showPartner = false }}
+          {{ end }}
+        {{ end }}
+        {{ if $showPartner }}
+          {{ if .url }}
             <a
               href="{{ .url }}"
               rel="noopener"
@@ -352,7 +364,7 @@
               class="px-3 logo"
               src="{{ .logo }}"
             />
-          {{ if ne .url nil }}
+          {{ if .url }}
             </a>
           {{ end }}
         {{ end }}
